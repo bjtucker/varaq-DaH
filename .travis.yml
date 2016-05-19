@@ -10,8 +10,5 @@ node_js:
 before_install:
   - npm install -g grunt-cli
 
-install:
-  - apt-get install -y gforth
-
 script: gforth test/test.fth | grep Test-OK
 
