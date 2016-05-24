@@ -3,12 +3,5 @@ addons:
     packages:
     - gforth
 
-language: node_js
-node_js:
-  - "node"
-
-before_install:
-  - npm install -g grunt-cli
-
 script: gforth test/test.fth | grep Test-OK
 
