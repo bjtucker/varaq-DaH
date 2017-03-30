@@ -3,5 +3,6 @@ addons:
     packages:
     - gforth
 
-script: make test
+script:
+- make test
 
