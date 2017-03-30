@@ -3,5 +3,5 @@ addons:
     packages:
     - gforth
 
-script: gforth test/test.fth | grep Test-OK
+script: gforth ./test.fth |grep INCORRECT; [ $? -ne 0 ]
 
